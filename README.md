@@ -14,6 +14,8 @@ pip install -r requirements.txt                         # webcam or saved photos
 pip install -r requirements-realsense.txt               # + Intel RealSense camera (Linux/Windows)
 ```
 
+A trained model is included (`models/best.pt`), so `check` and `inspect` work right away. It was trained on our brown paper bags under a top-down camera; for other bags or camera positions, capture your own photos and retrain.
+
 The first training run downloads the YOLO base model (`yolo11s-cls.pt`, about 11 MB).
 
 ## Settings: `.env`
@@ -75,6 +77,6 @@ bag_inspect.py              everything: capture, train, inspect, check
 .env                        settings
 requirements*.txt           Python packages
 Dockerfile                  container for train / check
-models/best.pt              trained model (created by `train`)
+models/best.pt              trained model (included: our brown paper bags, top-down camera; retrain for your setup)
 bag_data/                   your photos + bag places (not in git)
 ```
