@@ -1,0 +1,3 @@
+# only needed with CAMERA=realsense (Linux / Windows x86-64)
+-r requirements.txt
+pyrealsense2>=2.55

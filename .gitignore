@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.venv/
+
+# photos and results stay on your own machine
+bag_data/
+inspections/
+photos/
+
+# training output and downloaded base models
+models/run/
+models/history/
+yolo11*-cls.pt
